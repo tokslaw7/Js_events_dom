@@ -12,3 +12,13 @@
 .glow {
     box-shadow: 0 0 15px rgba(255, 107, 107, 0.8);
 }
+
+.lightMode {
+    background-color: white;
+    color: #454545;
+  }
+  
+  body {
+    background-color: #454545;
+    color: white;
+  }

@@ -37,9 +37,40 @@ let randomColorBtn = document.getElementById("randomColorBtn");
         return changedcolors [Math.floor(Math.random()*changedcolors.length)];
     }
 
+//classList 
 function changeBtnStyle() {
     const btn = document.querySelector(".cool-btn")
     btn.classList.toggle("glow"); // Toggles glow effect
     }
-        
+
+//DarkMode 
+let btnMode = document.querySelector("#darkMode");
+
+    btnMode.addEventListener("click", function(e){
+    document.body.classList.toggle("lightMode");
+
+
+if (document.body.classList.contains("lightMode")){
+    btnMode.innerText ="Light Mode";
+}else{
+    btnMode.innerText = "Dark Mode";
+}
+
+});
+
+// let btnMode = document.querySelector("button")
+// let isDarkMode = false
+
+// btnMode.addEventListener("click", ()=>{
+//   if(isDarkMode){
+//     document.body.classList.remove("dark")
+//     button.textContent="dark mode"
+//     isDarkMode = false
+//   }
+//   else{
+//     document.body.classList.add("dark")
+//     button.textContent = "light mode"
+//     isDarkMode = true
+//   }
+// })
 
