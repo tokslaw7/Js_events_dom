@@ -20,4 +20,9 @@ document.addEventListener("keydown", function(e) {
 
 });
 
+let clickMe = document.getElementById("clickMe");
+document.addEventListener("click", function(e){
+    clickMe.innerText = "You Clicked Me";
+})
+
    
