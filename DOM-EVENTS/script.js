@@ -9,5 +9,15 @@ document.addEventListener("DOMContentLoaded", function(){
    
    })
 
+//Get the element that will show our key code
+let directionEl = document.getElementById("direction");
+
+// Can be changed with Key press or key up depending on what you might need
+document.addEventListener("keydown", function(e) {
+
+ // When a key is pressed, the element with the id of direction will show the message
+ directionEl.innerText = `The Key you pressed is ${e.code}`;
+
+});
 
    
