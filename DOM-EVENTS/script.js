@@ -25,4 +25,15 @@ document.addEventListener("click", function(e){
     clickMe.innerText = "You Clicked Me";
 })
 
-   
+//Background Random Color Btn functionality
+let randomColorBtn = document.getElementById("randomColorBtn");
+
+    randomColorBtn.addEventListener("click", function(e){
+     document.body.style.backgroundColor = changeColor();
+    });
+    
+    function changeColor(){
+        const changedcolors = ["red", "pink", "cyan", "yellow", "lightgreen"];
+        return changedcolors [Math.floor(Math.random()*changedcolors.length)];
+    }
+
