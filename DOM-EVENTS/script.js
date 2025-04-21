@@ -29,8 +29,9 @@ document.addEventListener("click", function(e){
 let randomColorBtn = document.getElementById("randomColorBtn");
 
     randomColorBtn.addEventListener("click", function(e){
-     document.body.style.backgroundColor = changeColor();
-    });
+
+            document.body.style.backgroundColor = changeColor();
+        });
 
     function changeColor(){
         const changedcolors = ["red", "pink", "cyan", "yellow", "lightgreen"];
@@ -48,7 +49,6 @@ let btnMode = document.querySelector("#darkMode");
 
     btnMode.addEventListener("click", function(e){
     document.body.classList.toggle("lightMode");
-
 
 if (document.body.classList.contains("lightMode")){
     btnMode.innerText ="Light Mode";
